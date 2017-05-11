@@ -1,0 +1,18 @@
+{
+  "name": "Pseudocode-support",
+  "version": "0.1.0",
+  "description": "Pseudocode support in Atom",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "http://atom.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atom/language-html.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atom/language-html/issues"
+  }
+}

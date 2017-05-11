@@ -1,0 +1,28 @@
+'.text.html, .text.html .meta.scope.between-tag-pair, .text.html .punctuation.tag.begin .text.plain':
+  # A
+  'BLOK':
+    'prefix': 'blok'
+    'body': """
+      ${8:
+      ${:\t}IF [${1:true}] THEN
+        SETOPTION("segment1","${2:}");
+        SETOPTION("segment3","000");
+        SETOPTION("ItemType","${3:}");
+        SETOPTION("MeasurementUnit","${4:}");
+        SETNUMERICOPTION("Quantity",[${5:}]);
+        SETOPTION("MeasurementUnit2","${6:}");
+        SETNUMERICOPTION("Quantity2",[${7:}]);
+      ${:\t}ENDIF
+
+      }
+    """
+  'SEG1':
+    'prefix': 'seg'
+    'body': """SETOPTION("segment1","${1:false}");"""
+    'description': 'Output data to the console'
+    'rightLabelHTML': '<span style="color:#ff0">segment1</span>'
+  'SEG2':
+    'prefix': 'seg1'
+    'body': 'SETOPTION("segment3","${1:}");'
+    'description': 'segment3'
+    'rightLabelHTML': '<span style="color:#ff0">segment2</span>'
